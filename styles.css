@@ -1,0 +1,48 @@
+html {
+    background-color: rgb(255, 252, 233);
+}
+
+/* body {
+	background: linear-gradient(-45deg, #ffffff, #9ce3ff, #898989, #b8b8b8);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+} */ /* Add this animated background in last */ 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.navigation-bar {
+    display:flex;
+    text-decoration: none;
+}
+
+.navigation-bar li {
+    margin: 20px;
+    align-content: flex-end;
+    text-decoration: none;
+    
+}   
+
+.about-me {
+    display: flex;
+}
+
+#portfolio-image {
+    margin-left: 25px;
+}
+
+#about-me-section {
+    margin-left: 100px;
+    /* border: 1px solid black; */
+    margin-right: 25px;
+}
