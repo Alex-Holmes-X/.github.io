@@ -48,6 +48,20 @@ html {
     display: flex;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+#projects h2, #projects p,#skills h2, #skills p , #find-me h2{
+    text-align: center;
+}
+
+#projects p, #skills p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 #portfolio-image {
     margin-left: 25px;
 }
@@ -87,8 +101,10 @@ html {
 
 #credits {
     display: flex;
+    /* border-top: 1px solid black; */
 }
 
 #credits p {
     margin: 25px;
+    
 }
