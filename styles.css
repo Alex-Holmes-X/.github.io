@@ -1,13 +1,14 @@
 html {
-    background-color: rgb(255, 252, 233);
+    background-color: rgb(208, 236, 245);
+    font-family: 'Rubik', sans-serif;
 }
 
 /* body {
-	background: linear-gradient(-45deg, #ffffff, #9ce3ff, #898989, #b8b8b8);
+	background: linear-gradient(-45deg, #ffffff, #aeb0b1, #baf8f1, #cfffce);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
-} */ /* Add this animated background in last */ 
+}  /* Add this animated background in last */ 
 
 @keyframes gradient {
 	0% {
@@ -23,17 +24,27 @@ html {
 
 .navigation-bar {
     display:flex;
-    text-decoration: none;
+    /* border: 1px solid black; */
+    justify-content: flex-end;
 }
 
 .navigation-bar li {
-    margin: 20px;
-    align-content: flex-end;
+    margin: 30px;
+    list-style-type: none;
+    padding: 10px 50px ;
     text-decoration: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+    background-color: rgba(0, 216, 194, 0.577);
     
-}   
+}
+.navigation-bar li a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}     
 
-.about-me {
+#about-me {
     display: flex;
 }
 
@@ -43,6 +54,41 @@ html {
 
 #about-me-section {
     margin-left: 100px;
-    /* border: 1px solid black; */
     margin-right: 25px;
+}
+
+#inline-skills {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    /* border: 1px solid black ; */
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+#inline-skills li {
+    margin: 20px;
+
+    text-align: center;
+}
+
+#novice {
+    font-size: small;
+}
+
+#find-me-icons {
+    display: flex;
+}
+
+#find-me-icons a {
+    margin: 25px;
+}
+
+#credits {
+    display: flex;
+}
+
+#credits p {
+    margin: 25px;
 }

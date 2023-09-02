@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="javascript" href="javaScript.js">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script>
+        let bGColor = document.getElementById("navigation-bar");
+
+
+            bGColor.onmouseover = function () {
+                li.style.color = 'blue';
+            }
+
+    </script>
 </head>
 <body>
     <h1>Welcome to my Portfolio</h1>
     <nav>
         <ul class="navigation-bar">
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Contact</li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href="#find-me">Find Me</a></li>
         </ul>
     </nav>
-    <header class="about-me">
+    <header id="about-me">
         <section id="portfolio-image">
             <img src="./Media/rebeccakerrphotography-katie&alexpriestshouse-18.jpg" alt="image of Alex Holmes" width="250px" height="'25
         0px">
@@ -26,16 +38,87 @@
         <section id="about-me-section">
             <div id="about-me-description">
                 <h3>About me</h3>
-                <p>Hi 👋  thank you for taking the time to vist my Portfolio!</p>
-                <p>My name is Alex Holmes and I am currenlty studying to become a Full-Stack 
+                <p>Hi 👋 Thank you for taking the time to visit my Portfolio!</p>
+                <p>My name is Alex Holmes and I am currently studying to become a Full-Stack 
                     Web Developer. Having worked the the Motor Industry for around 20 years I felt it was time
-                    to change my career and learn a new skill that i can really feel passionate about.
+                    to change my career and learn a new skill that I can feel passionate about.
                 </p>
                 <p>I hope you like some of the things I have done!!</p>
             </div>
-
         </section>
     </header>
-    
+    <br><br>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>I have currently completed various projects on the Codecademy platform to aid my 
+            training as well as creating stand-alone projects uploaded to GitHub, the last one loaded
+            to GitHub was a random music finder that would randomly pick a style of music and a decade
+            to listen to (Link Below). I am currently working on an online cheat sheet that can be referenced when
+            needed. 
+        </p>
+        <p>I have also created a helpful HTML Form Sheet that assists in describing how the various 
+            types of from boxes work with examples (Link Below)</p><br>
+        <a href="https://github.com/Alex-Holmes-X/Music-Finder.git" target="_blank">Mixed Messages Project</a><br><br>
+        <img src="./Media/music-finder-screenshot.png" alt="music finder screenshot"><br><br>
+            <!-- TODO "remove text decoration from hyperlink, add hover style" -->
+        <a href="https://github.com/Alex-Holmes-X/HTML-Forms.git">HTML Forms Example Site</a><br><br>
+        <img src="./Media/HTML Form.png" alt="example html form site" height="350px" width="700px">
+    </section>
+    <section id="skills">
+        <!-- TODO Top borders to add and maybe change background color -->
+        <h2>Skills</h2> <!-- Add in in line style for icons , add as list items-->
+        <p>I am currently studying all of the languages below and I would put myself
+            at a novice level in these. I can build a basic website with styling and JavaScript.I can 
+            add links, media, videos and other content as well as style the page using Grid and Flex 
+            styling.
+        </p>
+        <div id="inline-skills-container">
+            <ul id="inline-skills">
+                <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                    <path fill="orange" d="M10.814,11.264l3.267,37.028c0.142,1.608,1.237,2.974,2.776,3.462l11.784,3.734	c2.185,0.692,4.531,0.692,6.716,0l11.784-3.734c1.539-0.488,2.634-1.853,2.776-3.462l3.267-37.028C53.34,9.51,51.958,8,50.197,8	H13.803C12.042,8,10.66,9.51,10.814,11.264z"></path><path d="M47.142,51.753c1.539-0.488,2.634-1.853,2.776-3.462l1.434-16.255 c-2.739-0.248-5.177,1.79-5.42,4.541l-0.878,9.946c-0.035,0.402-0.309,0.743-0.694,0.865l-7.704,2.441 c-2.469,0.782-4.09,3.28-3.565,5.816c0.021,0.101,0.061,0.191,0.087,0.289c0.736-0.078,1.467-0.223,2.18-0.449L47.142,51.753z" opacity=".15"></path><path fill="#fff" d="M10.814,11.264l2.182,24.731c0.865-0.079,1.761-0.417,2.691-1.397 c1.317-1.388,1.912-3.315,1.744-5.221l-1.349-15.288C16.031,13.503,16.492,13,17.079,13H23c2.761,0,4.997-2.239,4.997-5H13.803 C12.042,8,10.659,9.51,10.814,11.264z" opacity=".3"></path><path fill="#ffce29" d="M32,15v33.334c0,1.333,1.28,2.293,2.56,1.92l9.204-2.682c0.793-0.231,1.363-0.927,1.433-1.75	l2.618-30.652c0.1-1.167-0.821-2.17-1.993-2.17H34C32.895,13,32,13.895,32,15z"></path><path fill="#fff" d="M32,33v-5h9.928c0.58,0,1.038,0.491,0.998,1.069l-0.9,12.986c-0.028,0.405-0.298,0.753-0.684,0.88	L32,46.021v-5.325l5.179-1.775l0.379-5.898L32,33z M43.312,22.075l0.227-2.999C43.584,18.495,43.124,18,42.542,18H32l-0.014,4.986	l10.328,0.013C42.837,23,43.273,22.597,43.312,22.075z"></path><path fill="#eee" d="M32,40.716v5.305l-9.344-3.075c-0.384-0.126-0.654-0.472-0.685-0.875l-0.375-4.99	c-0.044-0.58,0.415-1.075,0.997-1.075h3.057c0.519,0,0.952,0.397,0.996,0.914l0.174,2.027L32,40.716z M25.811,22.991H32v-4.982	H21.566c-0.575,0-1.032,0.484-0.998,1.059l0.766,13.001c0.031,0.529,0.469,0.941,0.998,0.941H32v-5.006h-5.811L25.811,22.991z"></path><ellipse cx="32" cy="61" opacity=".3" rx="20" ry="3"></ellipse><polyline fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" points="14.857,17.256 14.349,11.5 19.067,11.5"></polyline>
+                    </svg>
+                <li>        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 100 100">
+                    <path d="M51.958,98c-0.58,0-1.16-0.078-1.724-0.232l-27.742-7.702c-2.593-0.72-4.495-3.004-4.735-5.685	l-6.179-69.304c-0.16-1.813,0.451-3.621,1.677-4.962C14.485,8.77,16.233,8,18.053,8h67.895c1.821,0,3.569,0.771,4.798,2.115	c1.225,1.339,1.837,3.147,1.677,4.959L86.236,84.37c-0.24,2.683-2.145,4.967-4.739,5.686l-27.803,7.709	C53.124,97.921,52.542,98,51.958,98z" opacity=".35"></path><path fill="#f2f2f2" d="M49.958,96c-0.58,0-1.16-0.078-1.724-0.232l-27.742-7.702c-2.593-0.72-4.495-3.004-4.735-5.685	L9.578,13.077c-0.16-1.813,0.451-3.621,1.677-4.962C12.485,6.77,14.233,6,16.053,6h67.895c1.821,0,3.569,0.771,4.798,2.115	c1.225,1.339,1.837,3.147,1.677,4.959L84.236,82.37c-0.24,2.683-2.145,4.967-4.739,5.686l-27.803,7.709	C51.124,95.921,50.542,96,49.958,96z"></path><polygon fill="#2b59a1" points="83.947,12.5 77.762,81.792 49.958,89.5 22.231,81.803 16.053,12.5"></polygon><path fill="#40396e" d="M49.958,91c-0.135,0-0.27-0.019-0.401-0.055L21.83,83.249c-0.602-0.167-1.037-0.689-1.093-1.312	l-6.179-69.303c-0.037-0.419,0.104-0.835,0.388-1.146C15.23,11.177,15.632,11,16.053,11h67.895c0.421,0,0.822,0.177,1.106,0.488	c0.284,0.311,0.425,0.726,0.388,1.146l-6.186,69.292c-0.056,0.622-0.491,1.145-1.094,1.312l-27.804,7.709	C50.228,90.982,50.093,91,49.958,91z M23.634,80.635l26.324,7.309l26.402-7.32L82.308,14H17.692L23.634,80.635z"></path><polygon fill="#2785bd" points="72.467,77.38 77.771,17.957 50,17.957 50,83.608"></polygon><polygon fill="#d9eeff" points="50,43.957 51,47.957 50,51.957 30.94,51.957 30.23,43.957"></polygon><polygon fill="#d9eeff" points="50,26.957 51,30.957 50,34.957 29.441,34.957 28.72,26.957"></polygon><polygon fill="#d9eeff" points="51,69.957 50,74.796 32.55,69.967 31.39,56.957 39.92,56.957 40.5,63.397 50,65.957"></polygon><path fill="#f2f2f2" d="M50,26.957v8h11.969l-0.807,9H50c-0.009-0.002-0.008,8-0.008,8h10.485l-1.027,11.44L50,65.957v8.84	l17.4-4.83l0.12-1.44l2-22.37l0.21-2.29l1.5-16.91H50z"></path>
+                    </svg>
+                <li>        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z"></path>
+                    </svg>
+                <li>        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32">
+                    <path d="M 15.994141 3 C 15.629141 3 15.264219 3.0895313 14.949219 3.2695312 L 5.0390625 8.9902344 C 4.3990625 9.3602344 4 10.060781 4 10.800781 L 4 21.179688 C 4 21.929688 4.3990625 22.620234 5.0390625 22.990234 L 7.640625 24.490234 C 8.900625 25.110234 9.3499219 25.109375 9.9199219 25.109375 C 11.789922 25.109375 12.859375 23.979531 12.859375 22.019531 L 12.859375 11.310547 C 12.859375 11.150547 12.730312 11.019531 12.570312 11.019531 L 11.320312 11.019531 C 11.150313 11.019531 11.029297 11.150547 11.029297 11.310547 L 11.029297 22.009766 C 11.029297 22.889766 10.120391 23.749531 8.6503906 23.019531 L 5.9296875 21.449219 C 5.8296875 21.399219 5.7695313 21.289687 5.7695312 21.179688 L 5.7695312 10.810547 C 5.7695312 10.690547 5.8296875 10.589297 5.9296875 10.529297 L 15.839844 4.8105469 C 15.929844 4.7505469 16.050391 4.7505469 16.150391 4.8105469 L 26.060547 10.529297 C 26.160547 10.589297 26.220703 10.690781 26.220703 10.800781 L 26.220703 21.179688 C 26.220703 21.289687 26.160313 21.399219 26.070312 21.449219 L 16.150391 27.179688 C 16.060391 27.229688 15.929844 27.229688 15.839844 27.179688 L 13.289062 25.669922 C 13.219062 25.619922 13.120781 25.610391 13.050781 25.650391 C 12.340781 26.050391 12.210781 26.100078 11.550781 26.330078 C 11.390781 26.380078 11.140625 26.479766 11.640625 26.759766 L 14.949219 28.720703 C 15.269219 28.900703 15.630234 29 15.990234 29 C 16.360234 29 16.719062 28.900703 17.039062 28.720703 L 26.960938 22.990234 C 27.600938 22.620234 28 21.929688 28 21.179688 L 28 10.810547 C 28 10.060547 27.600938 9.37 26.960938 9 L 17.039062 3.2695312 C 16.724063 3.0895313 16.359141 3 15.994141 3 z M 18.660156 11.005859 C 15.830156 11.005859 14.140625 12.205078 14.140625 14.205078 C 14.140625 16.375078 15.819062 16.974141 18.539062 17.244141 C 21.789062 17.564141 22.039062 18.045547 22.039062 18.685547 C 22.039062 19.785547 21.150547 20.255859 19.060547 20.255859 C 16.430547 20.255859 15.850156 19.594922 15.660156 18.294922 C 15.640156 18.154922 15.520859 18.054688 15.380859 18.054688 L 14.089844 18.054688 C 13.929844 18.054688 13.810547 18.185938 13.810547 18.335938 C 13.810547 20.005937 14.720547 21.994141 19.060547 21.994141 C 22.200547 21.994141 24 20.755703 24 18.595703 C 24 16.455703 22.549766 15.884609 19.509766 15.474609 C 16.419766 15.074609 16.109375 14.864531 16.109375 14.144531 C 16.109375 13.544531 16.380156 12.755859 18.660156 12.755859 C 20.690156 12.755859 21.449766 13.194453 21.759766 14.564453 C 21.789766 14.694453 21.899062 14.794922 22.039062 14.794922 L 23.330078 14.794922 C 23.410078 14.794922 23.479063 14.755313 23.539062 14.695312 C 23.589062 14.645313 23.619375 14.564609 23.609375 14.474609 C 23.409375 12.114609 21.840156 11.005859 18.660156 11.005859 z"></path>
+                </svg>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#29b6f6" d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"></path><path fill="#0277bd" d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"></path><path fill="#0288d1" d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"></path>
+                        </svg>
+            </ul>
+        </div>
+    </section>
+    <section id="find-me">
+        <h2>Find me</h2>
+        <div id="find-me-icons">
+            <a href="https://github.com/"><img src="./Media/github-mark.svg" alt="github logo"></a>
+            <a href="https://www.linkedin.com/in/alex-holmes-11477599/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+            </svg></a>
+
+        </div> <!-- Image inside anchor tag -->
+
+
+    </section>
+
+
+    <footer>
+        <br>
+        <br>
+        <h2>Credits</h2>
+        <div id="credits">
+            <p>Logos courtesy of <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+            <!-- <p>Background effect courtesy of <a href="https://github.com/P1N2O" target="_Blank">Manuel Pinto</a></p> -->
+        </div> 
+        </footer>
+
+
+
+
+
 </body>
 </html>
