@@ -1,6 +1,7 @@
 html {
-    background-color: rgb(208, 236, 245);
+    /* background-color: rgb(208, 236, 245); */
     font-family: 'Rubik', sans-serif;
+    background-image: linear-gradient(rgb(193, 228, 239),rgb(166, 171, 236) );
 }
 
 /* body {
@@ -25,7 +26,7 @@ html {
 .navigation-bar {
     display:flex;
     /* border: 1px solid black; */
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .navigation-bar li {
@@ -36,7 +37,8 @@ html {
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 5px 5px 5px;
-    background-color: rgba(0, 216, 194, 0.577);
+    background-color: rgba(92, 255, 239, 0.577);
+
     
 }
 .navigation-bar li a {
@@ -44,22 +46,19 @@ html {
     color: rgb(50, 50, 50);
 }     
 
-#about-me {
+.about-me {
     display: flex;
 }
 
-#projects {
-    display: flex;
-    flex-direction: column;
-}
 
-#projects h2, #projects p,#skills h2, #skills p , #find-me h2{
+#projects h2, #skills h2{
     text-align: center;
 }
 
 #projects p, #skills p {
     margin-left: 200px;
     margin-right: 200px;
+    text-align: justify ;
 }
 
 #portfolio-image {
@@ -87,8 +86,21 @@ html {
     text-align: center;
 }
 
-#novice {
-    font-size: small;
+#project-container {
+    display: flex;
+}
+#project-styling {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#mixedMessages {
+    order: 0;
+
+}
+
+#HTMLForms {
+    order: 5;
 }
 
 #find-me-icons {
@@ -106,5 +118,5 @@ html {
 
 #credits p {
     margin: 25px;
-    
+
 }

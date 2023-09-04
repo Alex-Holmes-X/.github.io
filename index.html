@@ -10,27 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <script>
-        let bGColor = document.getElementById("navigation-bar");
-
-
-            bGColor.onmouseover = function () {
-                li.style.color = 'blue';
-            }
-
-    </script>
 </head>
 <body>
     <h1>Welcome to my Portfolio</h1>
     <nav>
         <ul class="navigation-bar">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href='#skills'>Skills</a></li>
-            <li><a href="#find-me">Find Me</a></li>
+            <li id="aboutMe"><a href="#about-me">About Me</a></li>
+            <li id="aboutMe"><a href="./projects.html">Projects</a></li>
+            <li id="aboutMe"><a href='#skills'>Skills</a></li>
+            <li id="aboutMe"><a href="#find-me">Find Me</a></li>
         </ul>
     </nav>
-    <header id="about-me">
+    <header class="about-me">
         <section id="portfolio-image">
             <img src="./Media/rebeccakerrphotography-katie&alexpriestshouse-18.jpg" alt="image of Alex Holmes" width="250px" height="'25
         0px">
@@ -48,25 +39,21 @@
         </section>
     </header>
     <br><br>
-    <section id="projects">
+
+    <section id="projects" onmouseenter="highlightOn()" onmouseleave="highlightOff()">
         <h2>Projects</h2>
         <p>I have currently completed various projects on the Codecademy platform to aid my 
             training as well as creating stand-alone projects uploaded to GitHub, the last one loaded
             to GitHub was a random music finder that would randomly pick a style of music and a decade
-            to listen to (Link Below). I am currently working on an online cheat sheet that can be referenced when
+            to listen to. I am currently working on an online cheat sheet that can be referenced when
             needed. 
         </p>
         <p>I have also created a helpful HTML Form Sheet that assists in describing how the various 
-            types of from boxes work with examples (Link Below)</p><br>
-        <a href="https://github.com/Alex-Holmes-X/Music-Finder.git" target="_blank">Mixed Messages Project</a><br><br>
-        <img src="./Media/music-finder-screenshot.png" alt="music finder screenshot"><br><br>
-            <!-- TODO "remove text decoration from hyperlink, add hover style" -->
-        <a href="https://github.com/Alex-Holmes-X/HTML-Forms.git">HTML Forms Example Site</a><br><br>
-        <img src="./Media/HTML Form.png" alt="example html form site" height="350px" width="700px">
+            types of from boxes work with examples</p><br>
     </section>
-    <section id="skills">
-        <!-- TODO Top borders to add and maybe change background color -->
-        <h2>Skills</h2> <!-- Add in in line style for icons , add as list items-->
+
+    <section id="skills" onmouseenter="highlightOnSkills()" onmouseleave="highlightOffSkills()">
+        <h2>Skills</h2>
         <p>I am currently studying all of the languages below and I would put myself
             at a novice level in these. I can build a basic website with styling and JavaScript.I can 
             add links, media, videos and other content as well as style the page using Grid and Flex 
@@ -114,11 +101,14 @@
             <p>Logos courtesy of <a href="https://icons8.com/" target="_blank">Icons8</a></p>
             <!-- <p>Background effect courtesy of <a href="https://github.com/P1N2O" target="_Blank">Manuel Pinto</a></p> -->
         </div> 
+
+        <h2>Version</h2>
+        <p>September 2023 - V1</p>
         </footer>
 
 
-
-
+<script src="./javaScript.js"></script>
 
 </body>
+
 </html>
